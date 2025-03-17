@@ -26,10 +26,26 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    
+<style>
+  .destination-card {
+      background: #f8f9fa;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+  </style>
   </head>
   <body>
     
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand col" href="index.html"><img src="images/big logo.png" width="40%" alt=""></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,9 +56,9 @@
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 	          <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
-	          <li class="nav-item active"><a href="#" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="/service.html" class="nav-link">Services</a></li>
 	          <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
-	          <li class="nav-item"><a href="export.html" class="nav-link">Export</a></li>
+	          <li class="nav-item active"><a href="#" class="nav-link">Export</a></li>
 	          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
@@ -55,111 +71,109 @@
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
           <div class="col-md-9 ftco-animate pb-5">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Service <i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-3 bread">Our Services</h1>
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Export <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-3 bread">Our Exports</h1>
           </div>
         </div>
       </div>
     </section>
-		
 
-		<section class="ftco-section bg-light">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-4">
-    				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/service1.jpeg);">
-    					</div>
-    					<div class="text">
-    						<h2 class="mb-0">Livestock Quarantine & Disease Prevention</h2>
-    						<div class="d-flex mb-3">
-	    						<p class="cat">Our quarantine facility is designed to ensure that all exported livestock is free from infectious diseases. We follow strict biosecurity measures and conduct veterinary health screenings before export.</p>
-	    						
-    						</div>
-							<ul>
-								<li>Regular health inspections by certified veterinarians.</li>
-								<li>Disease detection and prevention through laboratory testing.</li>
-								<li>Compliance with global export health regulations.</li>
-							</ul>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/serivice2.jpeg);">
-    					</div>
-    					<div class="text">
-    						<h2 class="mb-0">Research & Disease Control</h2>
-    						<div class="d-flex mb-3">
-	    						
-	    						<p>We conduct scientific research on livestock diseases prevalent in the Horn of Africa to:</p>
-    						</div>
-							<ul>
-								<li>Identify and prevent outbreaks that could impact livestock trade.</li>
-								<li>Improve livestock health through data-driven insights.</li>
-								<li>Develop strategies for sustainable livestock farming.</li>
-							</ul>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/service3.jpg);">
-    					</div>
-    					<div class="text">
-    						<h2 class="mb-0">Training Programs</h2>
-    						<div class="d-flex mb-3">
-	    						<p>We offer short-term training for:</p>
-    						</div>
-							<ul>
-								<li>Veterinarians.</li>
-								<li>Laboratory technicians.</li>
-								<li>Livestock traders and handlers.</li>
-							</ul>
-							<p>Our training programs focus on modern quarantine procedures, disease management, and export regulations.</p>
-    					</div>
-    				</div>
-    			</div>
+    <section class="export-destinations py-5">
+      <div class="container">
+          <h2 class="text-center mb-4">Our Global Export Destinations</h2>
+          <p class="text-center">We export high-quality livestock to international markets, ensuring compliance with global health standards.</p>
+  
+          <div class="row">
+              <!-- Middle East Section -->
+              <div class="col-md-6">
+                  <h3 class="text-center">🌍 Middle East</h3>
+                  <div class="destination-card text-center p-3">
+                      <img src="saudi-arabia-flag.png" alt="Saudi Arabia" width="50">
+                      <h4>Saudi Arabia 🇸🇦</h4>
+                      <p>One of our largest markets for sheep, goats, cattle, and camels.</p>
+                  </div>
+                  <div class="destination-card text-center p-3">
+                      <img src="uae-flag.png" alt="UAE" width="50">
+                      <h4>United Arab Emirates 🇦🇪</h4>
+                      <p>Exporting high-quality livestock with strict health standards.</p>
+                  </div>
+                  <div class="destination-card text-center p-3">
+                      <img src="qatar-flag.png" alt="Qatar" width="50">
+                      <h4>Qatar 🇶🇦</h4>
+                      <p>Regular exports of camels, sheep, and cattle to Qatar’s growing market.</p>
+                  </div>
+              </div>
+  
+              <!-- Europe Section -->
+              <div class="col-md-6">
+                  <h3 class="text-center">🌍 Europe</h3>
+                  <div class="destination-card text-center p-3">
+                      <img src="germany-flag.png" alt="Germany" width="50">
+                      <h4>Germany 🇩🇪</h4>
+                      <p>Supplying high-quality livestock to meet European market demands.</p>
+                  </div>
+                  <div class="destination-card text-center p-3">
+                      <img src="france-flag.png" alt="France" width="50">
+                      <h4>France 🇫🇷</h4>
+                      <p>Compliant with European biosecurity and export regulations.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+ 
 
-    			<div class="col-md-4">
-    				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/service4.jpg);">
-    					</div>
-    					<div class="text">
-    						<h2 class="mb-0">Livestock Market Information</h2>
-    						<div class="d-flex mb-3">
-	    						<p>We provide real-time livestock market data, helping traders and investors make informed decisions. Our data includes:</p>
-    						</div>
-							<ul>
-								<li>Price trends for different livestock types.</li>
-								<li>Export regulations in various countries.</li>
-								<li>Supply and demand forecasts for international markets.</li>
-							</ul>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/service5.jpg);">
-    					</div>
-    					<div class="text">
-    						<h2 class="mb-0">Trade Support & Partnerships</h2>
-    						<div class="d-flex mb-3">
-	    						<p>We work closely with:</p>
-    						</div>
-							<ul>
-								<li><b>Traders & Investors – </b>Facilitating trade agreements.</li>
-								<li><b>Government Agencies – </b>Ensuring compliance with livestock regulations.</li>
-								<li><b>International Organizations – </b>Expanding Somaliland’s livestock export market.</li>
-							</ul>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    		
-    	</div>
-    </section>
-    
+<section class="livestock-cards py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Types of Livestock We Export</h2>
+        <div class="row">
+            <!-- Sheep -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/sheeps.jpg" class="card-img-top" alt="Sheep">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Sheep 🐑</h4>
+                        <p class="card-text">Exported for meat & breeding.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cattle -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/cattle.jpg" class="card-img-top" alt="Cattle">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Cattle 🐄</h4>
+                        <p class="card-text">High-quality cattle for dairy & meat.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Goats -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/goat.jpg" class="card-img-top" alt="Goat">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Goats 🐐</h4>
+                        <p class="card-text">Certified goats for dairy & meat.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Camels -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/Camels.jpg" class="card-img-top" alt="Camel">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Camels 🐫</h4>
+                        <p class="card-text">Premium camels for export.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -181,9 +195,9 @@
               <ul class="list-unstyled">
                 <li><a href="/index.html" class="py-2 d-block">Home</a></li>
                 <li><a href="/about.html" class="py-2 d-block">About</a></li>
-                <li><a href="#" class="py-2 d-block">Services</a></li>
+                <li><a href="/service.html" class="py-2 d-block">Services</a></li>
                 <li><a href="facilities.html" class="py-2 d-block">Facilities</a></li>
-                <li><a href="export.html" class="py-2 d-block">Export</a></li>
+                <li><a href="#" class="py-2 d-block">Export</a></li>
                 <li><a href="#" class="py-2 d-block">Contact</a></li>
               </ul>
             </div>
