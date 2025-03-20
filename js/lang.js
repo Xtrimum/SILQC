@@ -78,7 +78,32 @@ const translations = {
         gov_header: "Government Agencies –",
         compliance: "Ensuring compliance with livestock regulations.",
         intl_header: "International Organizations –",
-        expanding: "Expanding Somaliland's livestock export market."
+        expanding: "Expanding Somaliland's livestock export market.",
+        facilities: "Facilities",
+        our_facilities: "Our Facilities",
+        world_class: "Our World-Class Quarantine Facilities",
+        quarantine_center: "Our quarantine center is equipped with state-of-the-art infrastructure to handle large-scale livestock export operations.",
+        diagnostic_lab: "Diagnostic Laboratory",
+        lab_point1: "Advanced testing for livestock diseases.",
+        lab_point2: "Compliance with export health requirements.",
+        pre_quarantine: "Pre-Quarantine Area",
+        pre_quarantine_desc: "Initial health screening before livestock enters the quarantine facility.",
+        quarantine_stations: "Quarantine Stations (A, B, C)",
+        stations_desc: "Segregation of different livestock categories for better disease control.",
+        admin_offices: "Administrative Offices",
+        admin_desc: "Managing quarantine operations and trade logistics.",
+        post_mortem: "Post-Mortem Room",
+        post_mortem_desc: "Examination of deceased animals for research and disease control.",
+        incinerator: "Incinerator",
+        incinerator_desc: "Safe disposal of infectious waste to prevent contamination.",
+        general_store: "General Store",
+        store_desc: "Storage for quarantine-related equipment and medical supplies.",
+        staff_houses: "Staff Houses & Mosque",
+        staff_desc: "Comfortable accommodation and prayer space for staff and visitors.",
+        dipping_hole: "Dipping Hole",
+        dipping_desc: "Treatment area for external parasites and infections.",
+        security_room: "Security Room",
+        security_desc: "24/7 monitoring to ensure facility safety and regulatory compliance."
     },
     ar: {
         menu: "القائمة",
@@ -159,7 +184,32 @@ const translations = {
         gov_header: "الوكالات الحكومية –",
         compliance: "ضمان الامتثال للوائح الماشية.",
         intl_header: "المنظمات الدولية –",
-        expanding: "توسيع سوق تصدير ماشية أرض الصومال."
+        expanding: "توسيع سوق تصدير ماشية أرض الصومال.",
+        facilities: "المرافق",
+        our_facilities: "مرافقنا",
+        world_class: "مرافق الحجر البيطري العالمية لدينا",
+        quarantine_center: "مركز الحجر البيطري لدينا مجهز ببنية تحتية حديثة للتعامل مع عمليات تصدير الماشية على نطاق واسع.",
+        diagnostic_lab: "المختبر التشخيصي",
+        lab_point1: "اختبارات متقدمة لأمراض الماشية.",
+        lab_point2: "الامتثال لمتطلبات الصحة التصديرية.",
+        pre_quarantine: "منطقة ما قبل الحجر البيطري",
+        pre_quarantine_desc: "الفحص الصحي الأولي قبل دخول الماشية إلى منشأة الحجر البيطري.",
+        quarantine_stations: "محطات الحجر البيطري (أ، ب، ج)",
+        stations_desc: "عزل الفئات المختلفة من الماشية لتحسين السيطرة على الأمراض.",
+        admin_offices: "المكاتب الإدارية",
+        admin_desc: "إدارة عمليات الحجر البيطري واللوجستيات التجارية.",
+        post_mortem: "غرفة التشريح",
+        post_mortem_desc: "فحص الحيوانات النافقة لأغراض البحث ومكافحة الأمراض.",
+        incinerator: "المحرقة",
+        incinerator_desc: "التخلص الآمن من النفايات المعدية لمنع التلوث.",
+        general_store: "المستودع العام",
+        store_desc: "تخزين المعدات اللازمة للحجر البيطري والإمدادات الطبية.",
+        staff_houses: "مساكن الموظفين والمسجد",
+        staff_desc: "سكن مريح ومساحة للصلاة للموظفين والزوار.",
+        dipping_hole: "حفرة التغطيس",
+        dipping_desc: "منطقة معالجة الطفيليات الخارجية والالتهابات.",
+        security_room: "غرفة الأمن",
+        security_desc: "مراقبة على مدار الساعة لضمان سلامة المنشأة والامتثال التنظيمي."
     }
 };
 
@@ -170,7 +220,7 @@ function switchLanguage(lang) {
 
         // Apply direction only to text elements
         element.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
-        element.style.textAlign = lang === 'ar' ? 'right' : '';
+        element.style.textAlign = lang === 'ar' ? 'center' : '';
     });
 
     // Update the lang attribute but NOT the global direction
