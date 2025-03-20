@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="ltr">
   <head>
     <title>SALIQC</title>
     <meta charset="utf-8">
@@ -25,38 +25,58 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/lang.js"></script>
   </head>
   <body>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand col" href="index.html"><img src="images/big logo.png" width="40%" alt=""></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" data-key="menu">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
-	          <li class="nav-item"><a href="export.html" class="nav-link">Export</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item active"><a href="#" class="nav-link" data-key="home">Home</a></li>
+	          <li class="nav-item"><a href="/about.html" class="nav-link" data-key="about">About</a></li>
+	          <li class="nav-item"><a href="service.html" class="nav-link" data-key="services">Services</a></li>
+	          <li class="nav-item"><a href="facilities.html" class="nav-link" data-key="facilities">Facilities</a></li>
+	          <li class="nav-item"><a href="export.html" class="nav-link" data-key="export">Export</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link" data-key="contact">Contact</a></li>
+            <li class="nav-item"><div class="lang-switcher">
+                <div class="dropdown">
+                  <button class="btn" type="button" id="langDropdown" data-toggle="dropdown">
+                    
+                     <span class="ion-ios-globe nav-link d-inline text-white" style="font-size:2rem"></span>
+                    
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="langDropdown">
+                    <a class="dropdown-item" href="#" onclick="switchLanguage('en')">
+                      🇬🇧
+                      English
+                    </a>
+                    <a class="dropdown-item" href="#" onclick="switchLanguage('ar')">
+                      🇦🇪
+                      العربية
+                    </a>
+                  </div>
+                </div>
+          </div></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
-    
+  
     <div class="hero-wrap ftco-degree-bg" style="background-image: url('images/header1.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
+      <div class="overlay" ></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
           <div class="col-lg-8 ftco-animate">
           	<div class="text w-100 text-center mb-md-5 pb-md-5">
-	            <h1 class="mb-4">Welcome to Saudi International Livestock Quarantine Center (SILQC)</h1>
-	            <p style="font-size: 18px;">Ensuring safe and disease-free livestock trade worldwide.</p>
+	            <h1 class="mb-4"><span data-key="welcome_header"> Welcome to Saudi International Livestock Quarantine Center (SILQC)</span></h1>
+	            <p style="font-size: 18px;"><span data-key="welcome_text">Ensuring safe and disease-free livestock trade worldwide.</span></p>
             </div>
           </div>
         </div>
@@ -73,14 +93,13 @@
 	  					</div>
 	  					<div class="col-md-8 d-flex align-items-center">
 	  						<div class="services-wrap rounded-right w-100">
-	  							<h3 class="heading-section mb-4">Largest Quarantine Facility in Somaliland</h3>
+	  							<h3 class="heading-section mb-4"  data-key="largest_facility">Largest Quarantine Facility in Somaliland</h3>
 	  							<div class="row d-flex mb-4">
 					          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
 					            <div class="services w-100 text-center">
 				              	<div class="icon d-flex align-items-center justify-content-center"><span class="icon-home" style="color: #339e4e;"></span></div>
 				              	<div class="text w-100">
-					                <h3 class="heading mb-2">Capacity</h3>
-					                <h3 class="heading mb-2">400,000 livestock</h3>
+					                <h3 class="heading mb-2" data-key="capacity">Capacity 400,000 livestock</h3>
 				                </div>
 					            </div>      
 					          </div>
@@ -88,7 +107,7 @@
 					            <div class="services w-100 text-center">
 				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake" style="color: #339e4e;"></span></div>
 				              	<div class="text w-100">
-					                <h3 class="heading mb-2">Compliance with global biosecurity standards</h3>
+					                <h3 class="heading mb-2" data-key="compliance">Compliance with global biosecurity standards</h3>
 					              </div>
 					            </div>      
 					          </div>
@@ -96,7 +115,7 @@
 					            <div class="services w-100 text-center">
 				              	<div class="icon d-flex align-items-center justify-content-center"><span class="icon-road" style="color: #339e4e;"></span></div>
 				              	<div class="text w-100">
-					                <h3 class="heading mb-2"> Strategic location in Berbera, Somaliland</h3>
+					                <h3 class="heading mb-2" data-key="strategic_location"> Strategic location in Berbera, Somaliland</h3>
 					              </div>
 					            </div>      
 					          </div>
@@ -104,13 +123,13 @@
 					            <div class="services w-100 text-center">
 				              	<div class="icon d-flex align-items-center justify-content-center"><span class="icon-import_export" style="color: #339e4e;"></span></div>
 				              	<div class="text w-100">
-					                <h3 class="heading mb-2">Exporting to the Middle East & Europe</h3>
+					                <h3 class="heading mb-2" data-key="exporting">Exporting to the Middle East & Europe</h3>
 					              </div>
 					            </div>      
 					          </div>
 					        </div>
-                  <p class="text-center text-dark"><b>Ensuring the highest standards in livestock health and safety.</b></p>
-					        <p><a href="service.html" class="btn btn-success py-3 px-4">Read More <span class="m-2 ion-ios-arrow-forward"></span></a></p>
+                  <p class="text-center text-dark"><b data-key="standards">Ensuring the highest standards in livestock health and safety.</b></p>
+					        <p><a href="service.html" class="btn btn-success py-3 px-4" data-key="read_more">Read More <span class="m-2 ion-ios-arrow-forward"></span></a></p>
 	  						</div>
 	  					</div>
 	  				</div>
@@ -125,12 +144,12 @@
 					</div>
 					<div class="col-md-6 wrap-about ftco-animate">
 	          <div class="heading-section heading-section-white pl-md-5">
-	          	<span class="subheading">About us</span>
-	            <h2 class="mb-4">Welcome to SILQC</h2>
+	          	<span class="subheading" data-key="about_us">About us</span>
+	            <h2 class="mb-4" data-key="about_welcome">Welcome to SILQC</h2>
 
-	            <p>Saudi International Livestock Quarantine Center (SILQC) is the largest livestock quarantine facility in Somaliland, covering 2 km². Strategically located in Berbera, our center ensures the safe and disease-free transport of livestock globally.</p>
-	            <p>Founded in 2025, SILQC is a privately developed but government-regulated facility, supervised by the Ministry of Livestock and Rural Development.</p>
-	            <p><a href="about.html" class="btn btn-success py-3 px-4">Read More <span class="m-2 ion-ios-arrow-forward"></span></a></p>
+	            <p data-key="about_description">Saudi International Livestock Quarantine Center (SILQC) is the largest livestock quarantine facility in Somaliland, covering 2 km². Strategically located in Berbera, our center ensures the safe and disease-free transport of livestock globally.</p>
+	            <p data-key="founded">Founded in 2025, SILQC is a privately developed but government-regulated facility, supervised by the Ministry of Livestock and Rural Development.</p>
+	            <p><a href="about.html" class="btn btn-success py-3 px-4" data-key="read_more">Read More <span class="m-2 ion-ios-arrow-forward"></span></a></p>
 	          </div>
 					</div>
 				</div>
@@ -141,8 +160,8 @@
 			<div class="container">
 				<div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-          	<span class="subheading">Services</span>
-            <h2 class="mb-3">Our Latest Services</h2>
+          	<span class="subheading" data-key="services">Services</span>
+            <h2 class="mb-3" data-key="latest_services">Our Latest Services</h2>
           </div>
         </div>
 				<div class="row">
@@ -150,7 +169,7 @@
 						<div class="services services-2 w-100 text-center">
             	<div class="icon d-flex bg-success align-items-center justify-content-center"><span class="icon-hand-stop-o"></span></div>
             	<div class="text w-100">
-                <h3 class="heading mb-2">Livestock Quarantine & Disease Prevention</h3>
+                <h3 class="heading mb-2" data-key="quarantine">Livestock Quarantine & Disease Prevention</h3>
               </div>
             </div>
 					</div>
@@ -158,7 +177,7 @@
 						<div class="services services-2 w-100 text-center">
             	<div class="icon d-flex bg-success align-items-center justify-content-center"><span class="ion-ios-filing"></span></div>
             	<div class="text w-100">
-                <h3 class="heading mb-2">Research & Disease Control</h3>
+                <h3 class="heading mb-2" data-key="research">Research & Disease Control</h3>
               </div>
             </div>
 					</div>
@@ -166,7 +185,7 @@
 						<div class="services services-2 w-100 text-center">
             	<div class="icon d-flex bg-success align-items-center justify-content-center"><span class="icon-tripadvisor"></span></div>
             	<div class="text w-100">
-                <h3 class="heading mb-2">Training Programs</h3>
+                <h3 class="heading mb-2" data-key="training">Training Programs</h3>
               </div>
             </div>
 					</div>
@@ -174,14 +193,14 @@
 						<div class="services services-2 w-100 text-center">
             	<div class="icon d-flex bg-success align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
             	<div class="text w-100">
-                <h3 class="heading mb-2">Livestock Market Information</h3>
+                <h3 class="heading mb-2" data-key="market_info">Livestock Market Information</h3>
               </div>
             </div>
 					</div>
 				</div>
         <div class="row">
           <div class="col-md-12 m-5 p-5">
-            <p><a href="service.html" class="btn btn-block btn-success py-3 px-4">Find out More About Our Services<span class="m-2 ion-ios-arrow-forward"></span></a></p>
+            <p><a href="service.html" class="btn btn-block btn-success py-3 px-4" data-key="find_more">Find out More About Our Services<span class="m-2 ion-ios-arrow-forward"></span></a></p>
           </div>
         </div>
 			</div>
@@ -192,8 +211,8 @@
 			<div class="container">
 				<div class="row justify-content-end">
 					<div class="col-md-6 heading-section heading-section-white ftco-animate">
-            <h2 class="mb-3">Partner with Us for Safe & Reliable Livestock Export.</h2>
-            <a href="/contact.html" class="btn btn-success btn-lg">Get in Touch <span class="m-2 ion-ios-arrow-forward"></span></a>
+            <h2 class="mb-3" data-key="partner">Partner with Us for Safe & Reliable Livestock Export.</h2>
+            <a href="/contact.html" class="btn btn-success btn-lg" data-key="get_touch">Get in Touch <span class="m-2 ion-ios-arrow-forward"></span></a>
           </div>
 				</div>
 			</div>
@@ -207,7 +226,7 @@
             <div class="block-18">
               <div class="text text-border d-flex align-items-center">
                 <strong class="number">1</strong>
-                <span>Year <br>Experienced</span>
+                <span data-key="year">Year <br>Experienced</span>
               </div>
             </div>
           </div>
@@ -215,7 +234,7 @@
             <div class="block-18">
               <div class="text text-border d-flex align-items-center">
                 <strong class="number">4 </strong>
-                <span>Types of <br>Livestock </span>
+                <span data-key="types">Types of <br>Livestock </span>
               </div>
             </div>
           </div>
@@ -223,7 +242,7 @@
             <div class="block-18">
               <div class="text text-border d-flex align-items-center">
                 <strong class="number">214</strong>
-                <span>Happy <br>Customers</span>
+                <span data-key="happy">Happy <br>Customers</span>
               </div>
             </div>
           </div>
@@ -231,7 +250,7 @@
             <div class="block-18">
               <div class="text d-flex align-items-center">
                 <strong class="number">5</strong>
-                <span>Total <br>Branches</span>
+                <span data-key="total">Total <br>Branches</span>
               </div>
             </div>
           </div>
@@ -245,7 +264,7 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2"><a class="navbar-brand col" href="index.html"><img src="images/big logo.png" width="40%" alt=""></a></h2>
-              <p>Saudi International Livestock Quarantine Center (SILQC) is a leading livestock quarantine facility in Somaliland, ensuring safe and disease-free animal exports to global markets.</p>
+              <p data-key="leading_facility">Saudi International Livestock Quarantine Center (SILQC) is a leading livestock quarantine facility in Somaliland, ensuring safe and disease-free animal exports to global markets.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -255,24 +274,24 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Pages</h2>
+              <h2 class="ftco-heading-2" data-key="pages">Pages</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Home</a></li>
-                <li><a href="/about.html" class="py-2 d-block">About</a></li>
-                <li><a href="/service.html" class="py-2 d-block">Services</a></li>
-                <li><a href="facilities.html" class="py-2 d-block">Facilities</a></li>
-                <li><a href="export.html" class="py-2 d-block">Export</a></li>
-                <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+                <li><a href="#" class="py-2 d-block" data-key="home">Home</a></li>
+                <li><a href="/about.html" class="py-2 d-block" data-key="about">About</a></li>
+                <li><a href="/service.html" class="py-2 d-block" data-key="services">Services</a></li>
+                <li><a href="facilities.html" class="py-2 d-block" data-key="facilities">Facilities</a></li>
+                <li><a href="export.html" class="py-2 d-block" data-key="export">Export</a></li>
+                <li><a href="contact.html" class="py-2 d-block" data-key="contact">Contact</a></li>
               </ul>
             </div>
           </div>
           
           <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="ftco-footer-widget mb-4 mr-auto">
+            	<h2 class="ftco-heading-2" style="float: right;" data-key="questions">Have a Questions?</h2>
             	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text"> Berbera, Somaliland</span></li>
+	              <ul style="float: right; clear: right;">
+	                <li><span class="icon icon-map-marker"></span><span class="text" data-key="berbera"> Berbera, Somaliland</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +252-63-4838222</span></a></li>
 	                <li><a href="mailto:info@Saliqc.com"><span class="icon icon-envelope"></span><span class="text">info@Saliqc.com</span></a></li>
 	              </ul>

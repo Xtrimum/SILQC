@@ -4,6 +4,17 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif; /* Default font for English */
+}
+
+/* Apply Tajawal only when Arabic is active */
+[lang="ar"] {
+    font-family: 'Tajawal', sans-serif;
+}
+
 :root {
   --blue: #339e4e;
   --indigo: #6610f2;
@@ -2544,7 +2555,7 @@ input[type="button"].btn-block {
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 70%;
   left: 0;
   z-index: 1000;
   display: none;
@@ -3371,7 +3382,7 @@ input[type="button"].btn-block {
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
-    color: #6c757d;
+    color: #ffffff;
     pointer-events: none;
     cursor: default; }
 
