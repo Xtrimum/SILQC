@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/lang.js"></script>
+
 
     
 <style>
@@ -58,31 +60,49 @@
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand col" href="index.html"><img src="images/big logo.png" width="40%" alt=""></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" data-key="menu">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="/service.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
-	          <li class="nav-item active"><a href="#" class="nav-link">Export</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item"><a href="index.html" class="nav-link" data-key="home">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link" data-key="about">About</a></li>
+	          <li class="nav-item"><a href="service.html" class="nav-link" data-key="services">Services</a></li>
+	          <li class="nav-item"><a href="facilities.html" class="nav-link" data-key="facilities">Facilities</a></li>
+	          <li class="nav-item active"><a href="#" class="nav-link" data-key="export">Export</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link" data-key="contact">Contact</a></li>
+            <li class="nav-item"><div class="lang-switcher">
+                <div class="dropdown">
+                  <button class="btn" type="button" id="langDropdown" data-toggle="dropdown">
+                    
+                     <span class="ion-ios-globe nav-link d-inline text-white" style="font-size:2rem"></span>
+                    
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="langDropdown">
+                    <a class="dropdown-item" href="#" onclick="switchLanguage('en')">
+                      🇬🇧
+                      English
+                    </a>
+                    <a class="dropdown-item" href="#" onclick="switchLanguage('ar')">
+                      🇸🇦
+                        العربية
+                    </a>
+                  </div>
+                </div>
+          </div></li>
 	        </ul>
 	      </div>
 	    </div>
-	  </nav>
-    <!-- END nav -->
+	  </nav>   <!-- END nav -->
     
     <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/Sheep.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
           <div class="col-md-9 ftco-animate pb-5">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Export <i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-3 bread">Our Exports</h1>
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html" data-key="home">Home </a><i class="ion-ios-arrow-forward"></i></span> <span data-key="export_header">Export </span><i class="ion-ios-arrow-forward"></i></p>
+            <h1 class="mb-3 bread" data-key="our_exports">Our Exports</h1>
           </div>
         </div>
       </div>
@@ -90,42 +110,42 @@
 
     <section class="export-destinations py-5">
       <div class="container">
-          <h2 class="text-center mb-4">Our Global Export Destinations</h2>
-          <p class="text-center">We export high-quality livestock to international markets, ensuring compliance with global health standards.</p>
+          <h2 class="text-center mb-4" data-key="global_destinations">Our Global Export Destinations</h2>
+          <p class="text-center" data-key="export_quality">We export high-quality livestock to international markets, ensuring compliance with global health standards.</p>
   
           <div class="row">
               <!-- Middle East Section -->
               <div class="col-md-6">
-                  <h3 class="text-center">🌍 Middle East</h3>
+                  <h3 class="text-center" data-key="middle_east">🌍 Middle East</h3>
                   <div class="destination-card text-center p-3">
                       <img src="saudi-arabia-flag.png" alt="Saudi Arabia" width="50">
-                      <h4>Saudi Arabia 🇸🇦</h4>
-                      <p>One of our largest markets for sheep, goats, cattle, and camels.</p>
+                      <h4 data-key="saudi_arabia">Saudi Arabia 🇸🇦</h4>
+                      <p data-key="saudi_desc">One of our largest markets for sheep, goats, cattle, and camels.</p>
                   </div>
                   <div class="destination-card text-center p-3">
                       <img src="uae-flag.png" alt="UAE" width="50">
-                      <h4>United Arab Emirates 🇦🇪</h4>
-                      <p>Exporting high-quality livestock with strict health standards.</p>
+                      <h4 data-key="uae">United Arab Emirates 🇦🇪</h4>
+                      <p data-key="uae_desc">Exporting high-quality livestock with strict health standards.</p>
                   </div>
                   <div class="destination-card text-center p-3">
                       <img src="qatar-flag.png" alt="Qatar" width="50">
-                      <h4>Qatar 🇶🇦</h4>
-                      <p>Regular exports of camels, sheep, and cattle to Qatar’s growing market.</p>
+                      <h4 data-key="qatar">Qatar 🇶🇦</h4>
+                      <p data-key="qatar_desc">Regular exports of camels, sheep, and cattle to Qatar’s growing market.</p>
                   </div>
               </div>
   
               <!-- Europe Section -->
               <div class="col-md-6">
-                  <h3 class="text-center">🌍 Europe</h3>
+                  <h3 class="text-center" data-key="europe">🌍 Europe</h3>
                   <div class="destination-card text-center p-3">
                       <img src="germany-flag.png" alt="Germany" width="50">
-                      <h4>Germany 🇩🇪</h4>
-                      <p>Supplying high-quality livestock to meet European market demands.</p>
+                      <h4 data-key="germany">Germany 🇩🇪</h4>
+                      <p data-key="germany_desc">Supplying high-quality livestock to meet European market demands.</p>
                   </div>
                   <div class="destination-card text-center p-3">
                       <img src="france-flag.png" alt="France" width="50">
-                      <h4>France 🇫🇷</h4>
-                      <p>Compliant with European biosecurity and export regulations.</p>
+                      <h4 data-key="france">France 🇫🇷</h4>
+                      <p data-key="france_desc">Compliant with European biosecurity and export regulations.</p>
                   </div>
               </div>
           </div>
@@ -135,15 +155,15 @@
 
 <section class="livestock-cards py-5">
     <div class="container">
-        <h2 class="text-center mb-4">Types of Livestock We Export</h2>
+        <h2 class="text-center mb-4" data-key="livestock_types">Types of Livestock We Export</h2>
         <div class="row">
             <!-- Sheep -->
             <div class="col-md-3">
                 <div class="card">
                     <img src="images/sheeps.jpg" class="card-img-top" alt="Sheep">
                     <div class="card-body text-center">
-                        <h4 class="card-title">Sheep 🐑</h4>
-                        <p class="card-text">Exported for meat & breeding.</p>
+                        <h4 class="card-title" data-key="sheep">Sheep 🐑</h4>
+                        <p class="card-text" data-key="sheep_desc">Exported for meat & breeding.</p>
                     </div>
                 </div>
             </div>
@@ -152,8 +172,8 @@
                 <div class="card">
                     <img src="images/cattle.jpg" class="card-img-top" alt="Cattle">
                     <div class="card-body text-center">
-                        <h4 class="card-title">Cattle 🐄</h4>
-                        <p class="card-text">High-quality cattle for dairy & meat.</p>
+                        <h4 class="card-title" data-key="cattle">Cattle 🐄</h4>
+                        <p class="card-text" data-key="cattle_desc">High-quality cattle for dairy & meat.</p>
                     </div>
                 </div>
             </div>
@@ -162,8 +182,8 @@
                 <div class="card">
                     <img src="images/goat.jpg" class="card-img-top" alt="Goat">
                     <div class="card-body text-center">
-                        <h4 class="card-title">Goats 🐐</h4>
-                        <p class="card-text">Certified goats for dairy & meat.</p>
+                        <h4 class="card-title" data-key="goats">Goats 🐐</h4>
+                        <p class="card-text" data-key="goats_desc">Certified goats for dairy & meat.</p>
                     </div>
                 </div>
             </div>
@@ -172,8 +192,8 @@
                 <div class="card">
                     <img src="images/Camels.jpg" class="card-img-top" alt="Camel">
                     <div class="card-body text-center">
-                        <h4 class="card-title">Camels 🐫</h4>
-                        <p class="card-text">Premium camels for export.</p>
+                        <h4 class="card-title" data-key="camels">Camels 🐫</h4>
+                        <p class="card-text" data-key="camels_desc">Premium camels for export.</p>
                     </div>
                 </div>
             </div>
@@ -184,29 +204,29 @@
 
 <section class="quality-steps py-5">
   <div class="container">
-      <h2 class="text-center mb-4">Our Quality Assurance Process</h2>
-      <p class="text-center">Every animal undergoes a multi-step process to ensure the highest export quality.</p>
+      <h2 class="text-center mb-4" data-key="quality_process">Our Quality Assurance Process</h2>
+      <p class="text-center" data-key="process_desc">Every animal undergoes a multi-step process to ensure the highest export quality.</p>
 
       <div class="timeline">
           <div class="timeline-item">
-              <h4>Step 1: Health Screening 🩺</h4>
-              <p>Initial veterinary checks to identify any pre-existing conditions or signs of disease.</p>
+              <h4 data-key="step1">Step 1: Health Screening 🩺</h4>
+              <p data-key="step1_desc">Initial veterinary checks to identify any pre-existing conditions or signs of disease.</p>
           </div>
           <div class="timeline-item">
-              <h4>Step 2: Quarantine & Monitoring ⏳</h4>
-              <p>Animals are kept under observation for a set period to ensure they remain disease-free.</p>
+              <h4 data-key="step2">Step 2: Quarantine & Monitoring ⏳</h4>
+              <p data-key="step2_desc">Animals are kept under observation for a set period to ensure they remain disease-free.</p>
           </div>
           <div class="timeline-item">
-              <h4>Step 3: Laboratory Testing 🔬</h4>
-              <p>Samples are tested in our diagnostic laboratory to verify the absence of infectious diseases.</p>
+              <h4 data-key="step3">Step 3: Laboratory Testing 🔬</h4>
+              <p data-key="step3_desc">Samples are tested in our diagnostic laboratory to verify the absence of infectious diseases.</p>
           </div>
           <div class="timeline-item">
-              <h4>Step 4: Certification 📜</h4>
-              <p>Government-approved veterinarians issue health certifications for each batch of livestock.</p>
+              <h4 data-key="step4">Step 4: Certification 📜</h4>
+              <p data-key="step4_desc">Government-approved veterinarians issue health certifications for each batch of livestock.</p>
           </div>
           <div class="timeline-item">
-              <h4>Step 5: Export & Compliance ✅</h4>
-              <p>Only certified, healthy animals are approved for transport to international markets.</p>
+              <h4 data-key="step5">Step 5: Export & Compliance ✅</h4>
+              <p data-key="step5_desc">Only certified, healthy animals are approved for transport to international markets.</p>
           </div>
       </div>
   </div>
@@ -216,58 +236,57 @@
 
 
 
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2"><a class="navbar-brand col" href="index.html"><img src="images/big logo.png" width="40%" alt=""></a></h2>
-              <p>Saudi International Livestock Quarantine Center (SILQC) is a leading livestock quarantine facility in Somaliland, ensuring safe and disease-free animal exports to global markets.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Pages</h2>
-              <ul class="list-unstyled">
-                <li><a href="/index.html" class="py-2 d-block">Home</a></li>
-                <li><a href="/about.html" class="py-2 d-block">About</a></li>
-                <li><a href="/service.html" class="py-2 d-block">Services</a></li>
-                <li><a href="facilities.html" class="py-2 d-block">Facilities</a></li>
-                <li><a href="#" class="py-2 d-block">Export</a></li>
-                <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text"> Berbera, Somaliland</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +252-63-4838222</span></a></li>
-	                <li><a href="mailto:info@Saliqc.com"><span class="icon icon-envelope"></span><span class="text">info@Saliqc.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2"><a class="navbar-brand col" href="index.html"><img src="images/big logo.png" width="40%" alt=""></a></h2>
+          <p data-key="leading_facility">Saudi International Livestock Quarantine Center (SILQC) is a leading livestock quarantine facility in Somaliland, ensuring safe and disease-free animal exports to global markets.</p>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+          </ul>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> SILQC. All rights reserved | Made by <a href="#" target="_blank" style="color:red">Xtrimum Solutions</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+      </div>
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4 ml-md-5">
+          <h2 class="ftco-heading-2" data-key="pages">Pages</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="py-2 d-block" data-key="home">Home</a></li>
+            <li><a href="/about.html" class="py-2 d-block" data-key="about">About</a></li>
+            <li><a href="/service.html" class="py-2 d-block" data-key="services">Services</a></li>
+            <li><a href="facilities.html" class="py-2 d-block" data-key="facilities">Facilities</a></li>
+            <li><a href="export.html" class="py-2 d-block" data-key="export">Export</a></li>
+            <li><a href="contact.html" class="py-2 d-block" data-key="contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4 mr-auto">
+          <h2 class="ftco-heading-2" style="float: right;" data-key="questions">Have a Questions?</h2>
+          <div class="block-23 mb-3">
+            <ul style="float: right; clear: right;">
+              <li><span class="icon icon-map-marker"></span><span class="text" data-key="berbera"> Berbera, Somaliland</span></li>
+              <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +252-63-4838222</span></a></li>
+              <li><a href="mailto:info@Saliqc.com"><span class="icon icon-envelope"></span><span class="text">info@Saliqc.com</span></a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
-    
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+
+        <p>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> SILQC. All rights reserved | Made by <a href="#" target="_blank" style="color:red">Xtrimum Solutions</a>
+</p>
+      </div>
+    </div>
+  </div>
+</footer> 
   
 
   <!-- loader -->
