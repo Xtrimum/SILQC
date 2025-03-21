@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/lang.js"></script>
+
     <style>
       .contact-details, .contact-form {
           border-radius: 10px;
@@ -41,18 +43,37 @@
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand col" href="index.html"><img src="images/big logo.png" width="40%" alt=""></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" data-key="menu">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="/service.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
-	          <li class="nav-item"><a href="export.html" class="nav-link">Export</a></li>
-	          <li class="nav-item active"><a href="#" class="nav-link">Contact</a></li>
+	          <li class="nav-item"><a href="index.html" class="nav-link" data-key="home">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link" data-key="about">About</a></li>
+	          <li class="nav-item"><a href="service.html" class="nav-link" data-key="services">Services</a></li>
+	          <li class="nav-item"><a href="facilities.html" class="nav-link" data-key="facilities">Facilities</a></li>
+	          <li class="nav-item"><a href="export.html" class="nav-link" data-key="export">Export</a></li>
+	          <li class="nav-item active"><a href="#" class="nav-link" data-key="contact">Contact</a></li>
+            <li class="nav-item"><div class="lang-switcher">
+                <div class="dropdown">
+                  <button class="btn" type="button" id="langDropdown" data-toggle="dropdown">
+                    
+                     <span class="ion-ios-globe nav-link d-inline text-white" style="font-size:2rem"></span>
+                    
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="langDropdown">
+                    <a class="dropdown-item" href="#" onclick="switchLanguage('en')">
+                      🇬🇧
+                      English
+                    </a>
+                    <a class="dropdown-item" href="#" onclick="switchLanguage('ar')">
+                      🇸🇦
+                      العربية
+                    </a>
+                  </div>
+                </div>
+          </div></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -64,8 +85,8 @@
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
           <div class="col-md-9 ftco-animate pb-5">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-3 bread">Contact Us</h1>
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html" data-key="home">Home</a> <i class="ion-ios-arrow-forward"></i></span> <span data-key="contact_header">Contact</span> <i class="ion-ios-arrow-forward"></i></p>
+            <h1 class="mb-3 bread" data-key="contact_us">Contact Us</h1>
           </div>
         </div>
       </div>
@@ -75,26 +96,26 @@
       <div class="container">
           <!-- Contact Heading -->
           <div class="text-center mb-4">
-              <h2 class="fw-bold">📌 Get in Touch with Us</h2>
-              <p class="lead">We are here to assist you with any inquiries regarding livestock export, quarantine procedures, and trade partnerships. Feel free to reach out!</p>
+              <h2 class="fw-bold" data-key="get_in_touch">📌 Get in Touch with Us</h2>
+              <p class="lead" data-key="contact_desc">We are here to assist you with any inquiries regarding livestock export, quarantine procedures, and trade partnerships. Feel free to reach out!</p>
           </div>
   
           <div class="row">
               <!-- Contact Details -->
               <div class="col-md-6">
                   <div class="contact-details p-4 bg-light rounded">
-                      <h4>📍 Our Location</h4>
-                      <p>Berbera, Somaliland</p>
+                      <h4 data-key="our_location">📍 Our Location</h4>
+                      <p data-key="berbera">Berbera, Somaliland</p>
   
-                      <h4>📧 Email</h4>
+                      <h4 data-key="email">📧 Email</h4>
                       <p><a href="mailto:info@Saliqc.com" class="text-primary">info@Saliqc.com</a></p>
   
-                      <h4>📞 Phone</h4>
+                      <h4 data-key="phone">📞 Phone</h4>
                       <p><a href="tel:+252634838222" class="text-primary">+252-63-4838222</a></p>
   
-                      <h4>⏰ Business Hours</h4>
-                      <p>Monday - Saturday: 8:00 AM - 6:00 PM</p>
-                      <p>Sunday: Closed</p>
+                      <h4 data-key="business_hours">⏰ Business Hours</h4>
+                      <p data-key="hours24">24 Hours a Day</p>
+                      <p data-key="days7">7 Days a Week</p>
   
                       <div class="social-icons mt-3">
                           <a href="#" class="me-3"><i class="fab fa-facebook fa-2x text-primary"></i></a>
@@ -107,7 +128,7 @@
   
           <!-- Google Map Embed -->
           <div class="mt-5 text-center">
-              <h4>📍 Find Us on Google Maps</h4>
+              <h4 data-key="google_maps">📍 Find Us on Google Maps</h4>
               <iframe class="rounded shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31645.66013759856!2d45.0167!3d10.4333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d7c8f7bb7cb8d5f%3A0x8a71eb929eb09f8!2sBerbera%2C%20Somaliland!5e0!3m2!1sen!2s!4v1692901094841!5m2!1sen!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
       </div>
@@ -117,57 +138,57 @@
   
 	
 
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2"><a class="navbar-brand col" href="index.html"><img src="images/big logo.png" width="40%" alt=""></a></h2>
-              <p>Saudi International Livestock Quarantine Center (SILQC) is a leading livestock quarantine facility in Somaliland, ensuring safe and disease-free animal exports to global markets.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Pages</h2>
-              <ul class="list-unstyled">
-                <li><a href="/index.html" class="py-2 d-block">Home</a></li>
-                <li><a href="/about.html" class="py-2 d-block">About</a></li>
-                <li><a href="service.html" class="py-2 d-block">Services</a></li>
-                <li><a href="facilities.html" class="py-2 d-block">Facilities</a></li>
-                <li><a href="export.html" class="py-2 d-block">Export</a></li>
-                <li><a href="#" class="py-2 d-block">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text"> Berbera, Somaliland</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +252-63-4838222</span></a></li>
-	                <li><a href="mailto:info@Saliqc.com"><span class="icon icon-envelope"></span><span class="text">info@Saliqc.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2"><a class="navbar-brand col" href="index.html"><img src="images/big logo.png" width="40%" alt=""></a></h2>
+            <p data-key="leading_facility">Saudi International Livestock Quarantine Center (SILQC) is a leading livestock quarantine facility in Somaliland, ensuring safe and disease-free animal exports to global markets.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> SILQC. All rights reserved | Made by <a href="#" target="_blank" style="color:red">Xtrimum Solutions</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+            <h2 class="ftco-heading-2" data-key="pages">Pages</h2>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="py-2 d-block" data-key="home">Home</a></li>
+              <li><a href="/about.html" class="py-2 d-block" data-key="about">About</a></li>
+              <li><a href="/service.html" class="py-2 d-block" data-key="services">Services</a></li>
+              <li><a href="facilities.html" class="py-2 d-block" data-key="facilities">Facilities</a></li>
+              <li><a href="export.html" class="py-2 d-block" data-key="export">Export</a></li>
+              <li><a href="#" class="py-2 d-block" data-key="contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 mr-auto">
+            <h2 class="ftco-heading-2" style="float: right;" data-key="questions">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul style="float: right; clear: right;">
+                <li><span class="icon icon-map-marker"></span><span class="text" data-key="berbera"> Berbera, Somaliland</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +252-63-4838222</span></a></li>
+                <li><a href="mailto:info@Saliqc.com"><span class="icon icon-envelope"></span><span class="text">info@Saliqc.com</span></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="row">
+        <div class="col-md-12 text-center">
+  
+          <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> SILQC. All rights reserved | Made by <a href="#" target="_blank" style="color:red">Xtrimum Solutions</a>
+  </p>
+        </div>
+      </div>
+    </div>
+  </footer> 
     
   
 
