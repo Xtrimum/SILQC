@@ -140,7 +140,21 @@ const translations = {
         step4: "Step 4: Certification 📜",
         step4_desc: "Government-approved veterinarians issue health certifications for each batch of livestock.",
         step5: "Step 5: Export & Compliance ✅",
-        step5_desc: "Only certified, healthy animals are approved for transport to international markets."
+        step5_desc: "Only certified, healthy animals are approved for transport to international markets.",
+        contact_header: "Contact",
+        contact_us: "Contact Us",
+        get_in_touch: "📌 Get in Touch with Us",
+        contact_desc: "We are here to assist you with any inquiries regarding livestock export, quarantine procedures, and trade partnerships. Feel free to reach out!",
+        our_location: "📍 Our Location",
+        berbera: "Berbera, Somaliland",
+        email: "📧 Email",
+        phone: "📞 Phone",
+        business_hours: "⏰ Business Hours",
+        hours24: "24 Hours a Day",
+        days7: "7 Days a Week",
+        google_maps: "📍 Find Us on Google Maps",
+        email:"info@Saliqc.com",
+        tel:"+252-63-4838222"
     },
     ar: {
         menu: "القائمة",
@@ -284,6 +298,20 @@ const translations = {
         step4_desc: "إصدار شهادات صحية معتمدة من الحكومة لكل دفعة من الماشية.",
         step5: "الخطوة 5: التصدير والامتثال ✅",
         step5_desc: "يتم تصدير الحيوانات المعتمدة والخالية من الأمراض فقط إلى الأسواق الدولية.",
+        contact_header: "اتصل بنا",
+        contact_us: "تواصل معنا",
+        get_in_touch: "📌 تواصل معنا",
+        contact_desc: "نحن هنا لمساعدتك في أي استفسارات تتعلق بتصدير الماشية، إجراءات الحجر البيطري، والشراكات التجارية. لا تتردد في التواصل!",
+        our_location: "📍 موقعنا",
+        berbera: "بربرة، أرض الصومال",
+        email: "📧 البريد الإلكتروني",
+        phone: "📞 الهاتف",
+        business_hours: "⏰ ساعات العمل",
+        hours24: "24 ساعة في اليوم",
+        days7: "7 أيام في الأسبوع",
+        google_maps: "📍 اعثر علينا على خرائط جوجل",
+        email:"info@Saliqc.com",
+        tel:"+252-63-4838222"
     }
 };
 
